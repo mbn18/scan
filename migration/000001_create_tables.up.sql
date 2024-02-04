@@ -9,7 +9,7 @@ CREATE TABLE resource
     urn          TEXT PRIMARY KEY,
     type         TEXT NOT NULL, -- Would consider to put types on external table
     name         TEXT,
-    data         TEXT,
+    data         JSONB,
     generated_at timestamp
 );
 
